@@ -14,12 +14,9 @@ const createLi = (element) => {
   ingredientItem.textContent = element;
   ingredientItem.classList.add("item");
 
-  // console.log(ingredientItem);
   return ingredientItem;
 };
 
 const list = ingredients.map((ingredient) => createLi(ingredient));
 
 ingredientsList.append(...list);
-
-// console.log(list);
